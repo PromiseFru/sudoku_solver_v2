@@ -6,7 +6,7 @@ const server = require('../server');
 chai.use(chaiHttp);
 
 suite('Functional Tests', () => {
-    suite('POST to /api/solve', () => {
+    // suite('POST to /api/solve', () => {
         test('Solvable puzzle posted returns completed puzzle', done => {
             const input = '..9..5.1.85.4....2432......1...69.83.9.....6.62.71...9......1945....4.37.4.3..6..';
             const output = '769235418851496372432178956174569283395842761628713549283657194516924837947381625'
@@ -91,9 +91,9 @@ suite('Functional Tests', () => {
 
             done();
         });
-    });
+    // });
 
-    suite('POST to /api/check', () => {
+    // suite('POST to /api/check', () => {
 
         test('All fields filled in correctly, valid placement', done => {
             const input = "..9..5.1.85.4....2432......1...69.83.9.....6.62.71...9......1945....4.37.4.3..6.."
@@ -305,5 +305,5 @@ suite('Functional Tests', () => {
             done();
         });
 
-    });
+    // });
 });
